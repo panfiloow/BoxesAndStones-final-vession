@@ -96,16 +96,36 @@ Item {
             anchors.right: rightboxcom.right
         }
     }
-    Shortcut{
-
+   Shortcut{
+        sequences: [ "1"]
+        context: Qt.ApplicationShortcut
+        onActivated: {
+            sum2()
+            nextturn()
+         }
     }
     Shortcut{
-
+        sequences: [ "2"]
+        context: Qt.ApplicationShortcut
+        onActivated: {
+            mult3()
+            nextturn()
+        }
     }
     Shortcut{
-
+        sequences: [ "3"]
+        context: Qt.ApplicationShortcut
+        onActivated: {
+            sum3()
+            nextturn()
+        }
     }
     Shortcut{
-
+        sequences: [ "4"]
+        context: Qt.ApplicationShortcut
+        onActivated: {
+            mult2()
+            nextturn()
+        }
     }
 }
